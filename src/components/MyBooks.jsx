@@ -1,4 +1,6 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react';
+import '../styles.css';
+
 
 export default function MyBooks() {
 
@@ -10,7 +12,7 @@ export default function MyBooks() {
             .then(data => setBooks(data))
     }, [])
 
-    if (books.length > 0){
+   /* if (books.length > 0){
         return(
             <ul>
                 {
@@ -22,11 +24,49 @@ export default function MyBooks() {
                 }
             </ul>
         )
+    }*/
+
+    const deleteBook = ()=>{
+        
     }
 
     return (
-        <div>
-            Estou em books...
+        <>
+        <div >
+           <section className="section.grid">
+           {
+                    books.map( b => (
+                        <article className="article"
+                            key={b.i}
+                         >
+                            {b.title} 
+                            <h2>{b.author}</h2>
+                            <img src={b.imageUrl} alt={b.title}/>
+                            
+                            <p>Already Read: {b.alreadyRead}</p>
+                            <p><button onClick={deleteBook}> Delete </button></p>
+
+                            {/*
+                            <img src="../../public/livros/{b.imageUrl}" alt={b.title}/>
+                            <input type="image" src="../../public/livros/"{...b.imageUrl} alt={b.title} />
+                            <img src="../../public/livros/"{...b.imageUrl} alt={b.title}/>
+                            */}
+
+                        </article>
+
+                        
+                        
+                    ) )
+                }
+
+
+           </section>
+
+
+            
         </div>
+        
+    </>
     )
 }
+
