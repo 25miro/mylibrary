@@ -41,7 +41,7 @@ export default function MyBooks() {
                          >
                             {b.title} 
                             <h2>{b.author}</h2>
-                            <img src={b.imageUrl} alt={b.title}/>
+                            <img src={'../images/' + b.imageUrl} alt={b.title}/>
                             
                             <p>Already Read: {b.alreadyRead}</p>
                             <p><button onClick={deleteBook}> Delete </button></p>
