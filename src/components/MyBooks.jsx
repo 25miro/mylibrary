@@ -33,7 +33,7 @@ export default function MyBooks() {
     return (
         <>
         <div >
-           <section className="section.grid">
+           <section className="grid">
            {
                     books.map( b => (
                         <article className="article"
