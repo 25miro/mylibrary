@@ -39,7 +39,7 @@ export default function MyBooks() {
                         <article className="article"
                             key={b.i}
                          >
-                            {b.title} 
+                            <p><a href="https://google.pt">{b.title}</a></p> 
                             <h2>{b.author}</h2>
                             <img src={'../images/' + b.imageUrl} alt={b.title}/>
                             

@@ -14,9 +14,17 @@
 nav {
   padding: 20px;
   background-color: aqua;
+  
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+ul, li{
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .filterBook{
