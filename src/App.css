@@ -27,6 +27,11 @@ ul, li{
   justify-content: space-between;
 }
 
+li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .filterBook{
   background-color: bisque;
   padding: 10px;
