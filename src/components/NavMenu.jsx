@@ -16,7 +16,6 @@ export default function NavMenu() {
 
     return (
         <>
-        
            <nav>
                 <ul>
                     {
@@ -29,9 +28,6 @@ export default function NavMenu() {
                     }
                 </ul>
            </nav>
-
-      
-        
     </>
     )
 }

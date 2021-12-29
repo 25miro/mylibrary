@@ -12,19 +12,7 @@ export default function MyBooks() {
             .then(data => setBooks(data))
     }, [])
 
-   /* if (books.length > 0){
-        return(
-            <ul>
-                {
-                    books.map(b => (
-                        <li key={b.id}>
-                            {b.title}
-                        </li>
-                    ))
-                }
-            </ul>
-        )
-    }*/
+
 
     const deleteBook = ()=>{
         
@@ -45,12 +33,6 @@ export default function MyBooks() {
                             
                             <p>Already Read: {b.alreadyRead}</p>
                             <p><button onClick={deleteBook}> Delete </button></p>
-
-                            {/*
-                            <img src="../../public/livros/{b.imageUrl}" alt={b.title}/>
-                            <input type="image" src="../../public/livros/"{...b.imageUrl} alt={b.title} />
-                            <img src="../../public/livros/"{...b.imageUrl} alt={b.title}/>
-                            */}
 
                         </article>
 
