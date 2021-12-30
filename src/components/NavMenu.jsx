@@ -13,7 +13,10 @@ export default function NavMenu() {
                 <button>Home</button>
                 <button>Filter</button>
                 <button>Add Book</button>
+                <button>DashBoard</button>
            </nav>
-    </>
+           
+           </>
+           
     )
 }
