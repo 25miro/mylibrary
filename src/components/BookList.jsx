@@ -10,7 +10,8 @@ export default function BookList(props) {
     return (
            <section className="grid">
                 {
-                    props.books.map(b => <Book books={b} key={b.id} onDelete={props.onDelete} />)
+                    props.books.map(b => <Book books={b} 
+                        key={b.id} onDelete={props.onDelete} />)
                 }
            </section>
     )
